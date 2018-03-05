@@ -21,12 +21,14 @@ app.post('/', (req, res) => {
     console.log(req.body);
     console.log("\n\n**************************************************************************");
 
-    /*
-    var splittext = req.body.url.split('callerid=');
+    var splittext = req.url.split('callerid=');
     var callerid = splittext[1];
     var messagebody = req.body.TranscriptionText;
 
     console.log("Request received:");
+    console.log("req.url: " + req.url);
+    console.log("splittext: ");
+    console.log(splittext);
     console.log("callerid: " + callerid);
     console.log("messagebody: " + messagebody);
 
@@ -46,7 +48,7 @@ app.post('/', (req, res) => {
             }
         }
     )
-    */
+
 });
 
 
