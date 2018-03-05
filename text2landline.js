@@ -10,8 +10,7 @@ const app = express();
 
 app.use(bodyParser());
 
-const listenPort = 3010;
-
+var listenPort = process.env.PORT || 3010;
 
 app.post('/', (req, res) => {
     var splittext = req.body.url.split('callerid=');
