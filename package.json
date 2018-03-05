@@ -8,10 +8,15 @@
   },
   "author": "Tim Wittbrod",
   "license": "ISC",
+  "engines": {
+    "node": "9.2.0"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "http": "0.0.0",
     "twilio": "^3.13.0"
-  }
+  },
+  "scripts": {
+    "start" : "node text2landline.js" }
 }
